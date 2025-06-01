@@ -1,4 +1,4 @@
-// ✅ Cozy Brain Decay - Polished Version with Live Suggestions
+// ✅ Trenches Wordbook - Polished Version with Live Suggestions
 import { useState } from "react";
 import "./home.css";
 import { brainrotDictionary } from "./context/data";
@@ -73,14 +73,19 @@ export const App = () => {
   return (
     <div className="w100 df fdc aic p-r brainrot-container">
       <div className="df fdc aic gap-10 brainrot-header">
-        <h1>cozy brain decay</h1>
+        <h1>Trenches Wordbook</h1>
         <div className="df fdc aic gap-10">
           <p>
-            Brainrot is a minimal, distraction-free space for twisted words.
+            A lexicon of brainrot words, definitions, and more. Explore the
+            depths of linguistic chaos and discover the beauty of corrupted
+            language.
           </p>
           <p>Generate your own corrupted lexicon or explore the unknown.</p>
         </div>
-        <button className="df aic gap-10 mt-10 action-button">
+        <button
+          className="df aic gap-10 mt-10 action-button"
+          onClick={() => window.open("https://x.com/wordbook_sol", "_blank")}
+        >
           Follow Us <RiTwitterXFill />
         </button>
       </div>
@@ -180,7 +185,7 @@ export const App = () => {
       )}
 
       <div className="brainrot-footer">
-        © 2025 Cozy Brain Decay - All rights reserved.
+        © 2025 Trenches Wordbook - All rights reserved.
       </div>
     </div>
   );
